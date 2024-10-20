@@ -1,0 +1,8 @@
+.DS_Store
+.editorconfig
+.nrepl-port
+.clj-kondo/
+.lsp/
+.cpcache/
+.clerk/
+/target

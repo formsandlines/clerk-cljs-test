@@ -1,0 +1,11 @@
+{:paths ["src" "notebooks"]
+ :deps  {org.clojure/clojure {:mvn/version "1.11.1"}
+         io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+         org.babashka/cli {:mvn/version "0.8.60"}
+         eu.formsandlines/formform {:mvn/version "0.1.0"}}
+ :aliases 
+ {:nextjournal/clerk
+  {:exec-fn nextjournal.clerk/build!
+   :exec-args {:index "notebooks/index.clj"
+               :paths []}
+   :main-opts ["-m" "babashka.cli.exec"]}}}

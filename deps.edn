@@ -1,8 +1,12 @@
 {:paths ["src" "notebooks"]
- :deps  {org.clojure/clojure {:mvn/version "1.11.1"}
-         io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
-         org.babashka/cli {:mvn/version "0.8.60"}
-         eu.formsandlines/formform {:mvn/version "0.1.0"}}
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        io.github.nextjournal/clerk {:mvn/version "0.17.1102"}
+        ;; io.github.nextjournal/clerk
+        ;; {:git/sha "61a2dbe49ae1ab08c29326564d9b2783edffdd87"}
+        org.babashka/cli {:mvn/version "0.8.60"}
+        eu.formsandlines/formform
+        {:git/url "https://github.com/formsandlines/formform"
+         :git/sha "0caa931ae42e6fd87b6917e88ceab49cb21174c8"}}
  :aliases 
  {:nextjournal/clerk
   {:exec-fn nextjournal.clerk/build!
